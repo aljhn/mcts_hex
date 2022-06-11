@@ -1,0 +1,25 @@
+mode: train
+
+board_size: 4
+
+actual_games: 100
+initial_search_games: 1
+final_search_games: 100
+save_interval: 50
+exploration_constant: 1
+epsilon: 0
+epsilon_decay: 0.9
+mcts_visualize: false
+visualization_frequency: 50
+visualization_frame_delay: 0.5
+
+hidden_layer_nodes: [100, 200, 200, 100, 50]
+activation_functions: [relu, relu, relu, relu, relu]
+learning_rate: 0.001
+optimizer: adam
+
+topp_players: 3
+topp_games: 2
+topp_modelnames: models
+topp_save_interval: 50
+topp_visualize: true
